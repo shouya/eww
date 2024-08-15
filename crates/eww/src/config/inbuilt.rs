@@ -40,7 +40,7 @@ define_builtin_vars! {
 
     // @desc EWW_DISK - Information on on all mounted partitions (Might report inaccurately on some filesystems, like btrfs and zfs) Example: `{EWW_DISK["/"]}`
     // @prop { <mount_point>: { name, total, free, used, used_perc } }
-    "EWW_DISK" [2] => || Ok(DynVal::from(get_disks())),
+    // "EWW_DISK" [2] => || Ok(DynVal::from(get_disks())),
 
     // @desc EWW_BATTERY - Battery capacity in procent of the main battery
     // @prop { <name>: { capacity, status } }
